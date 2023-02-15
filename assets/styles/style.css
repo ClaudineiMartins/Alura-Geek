@@ -1,0 +1,18 @@
+
+@import url("login.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap");
+
+:root {
+    --font-principal: "Raleway";
+    --branco: #FFFFFF;
+    --cinza:#F5F5F5;
+    --cinza-medio:#C8C8C8;
+    --cinza-Escuro:#464646;
+    --cinza-placeholder:#A2A2A2;
+    --azul-Claro:#EAF2FD;
+    --azul:#2A7AE4;
+    --azul-hover:#1770e6;
+
+
+}
