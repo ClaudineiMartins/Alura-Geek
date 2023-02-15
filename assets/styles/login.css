@@ -28,13 +28,11 @@ header{
     padding-left: 20px;
 
 }
-input:focus, textarea:focus{
+input:focus{
     outline: none;
     border: 1px solid var(--azul);
 }
-.inputBuscar:focus, .inputLogin:focus{
-    
-}
+
 
 .inputBuscar::placeholder{
     font-family: var(--font-principal);
@@ -131,7 +129,6 @@ a.rodape-navmap-list-Link{
     color: var(--cinza-Escuro);
     text-decoration: none;
     width: auto;
-    /* padding-top: 24px;     */
 
 
 }
