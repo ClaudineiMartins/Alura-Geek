@@ -1,0 +1,288 @@
+
+body {
+    font-family: var(--font-principal)
+}
+header{
+    background-color: var(--branco);
+    
+}
+.cabeçalho {
+    height: 114px;
+    padding-left: 156px;
+    display: flex;
+    width: 100vw;
+    justify-content: start;
+    align-items: center;
+    
+    
+}
+
+.inputBuscar{
+    margin-left: 32px;
+    width: 393px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--cinza);
+    padding-left: 20px;
+
+}
+input:focus, textarea:focus{
+    outline: none;
+    border: 1px solid var(--azul);
+}
+.inputBuscar:focus, .inputLogin:focus{
+    
+}
+
+.inputBuscar::placeholder{
+    font-family: var(--font-principal);
+    background-image: url("/assets/images/Icon-lupa.svg");
+    background-repeat: no-repeat;
+    background-position:95%;
+}
+
+main {
+    background: var(--cinza);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+div.login {
+    width:423px;
+}
+
+.iniciarSessao{
+    
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 206px 0 25px 0;
+    
+    width: 100%;
+}
+
+
+
+.inputLogin{
+    border-radius: 4px;
+    padding: 17px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    height: 50px;
+    border: none;
+    color: #A2A2A2;
+    text-align:start;
+    box-shadow: 0 1px 1px 0 var(--cinza-medio);
+
+}
+div .btnEntrar{
+    margin-top: 47px;
+    margin-bottom: 90px;
+}
+div a.btnEntrar{
+    margin-top: 20px;
+    padding: 20.5px 185.5px;
+    background:var(--azul);
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+div button.btnEntrar:hover{
+    transition: .1s;
+    cursor: pointer;
+    background-color: var(--azul-hover);
+
+}
+
+footer{
+    background: #EAF2FD;
+
+}
+.rodape {
+    
+    display:flex ;
+    justify-content: space-between;
+    padding: 75px 152px 75px;
+    height: 250px;
+
+
+}
+
+div.rodape-navmap {
+    width: 176px;
+    height: 234px;
+}
+div nav.rodape-navmap-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+
+}
+
+a.rodape-navmap-list-Link{
+    font-weight: 500;
+    color: var(--cinza-Escuro);
+    text-decoration: none;
+    width: auto;
+    /* padding-top: 24px;     */
+
+
+}
+a.rodape-navmap-list-Link:not(:first-child) {
+    padding-top: 24px; 
+  }
+a.rodape-navmap-list-Link:hover{
+    text-decoration:underline ;
+    
+}
+
+div.form {
+    display: flex;
+    flex-direction: column;
+    width:560px ;
+    height: 240px;
+    gap: 8px;
+    
+    
+}
+h2 {
+    font-weight: bold;
+}
+div.form input {
+    height: 56px;
+    border: none;
+    width:560px;
+}
+div.form textarea {
+    width: 560px;
+    height: 82px;
+    border: none;
+    resize: none;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+div.form textarea::placeholder, div.form input::placeholder{
+    font-family: var(--font-principal);
+    padding-left: 12px;
+}
+div.form button {
+    width: 165px;
+    border: none;
+    background-color:var(--azul);
+    height:51px ;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+div.form button:hover{
+    transition: .1s;
+    cursor: pointer;
+    background-color: var(--azul-hover);
+
+}
+div.painel-desenvolvedor {
+    padding: 20px;
+    background-color: var(--cinza);
+    height: 80px;
+    text-align: center;
+}
+div.painel-desenvolvedor a img {
+    width: 30px;
+    padding: 5px;
+
+}
+
+
+
+@media screen and (max-width: 780px){
+    div.cabeçalho {
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    img.logo{
+        margin: 0px;
+
+    }
+
+    input.inputBuscar {
+        margin: 0px;
+        font-size: 14px;
+        
+    }
+    div.login{
+        width: 50%;
+    }
+    div.rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+
+    }
+    div.logoFooter {
+        border-bottom: solid var(--azul) 1px;
+    }
+    div.form{
+        
+        width: 170px ;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    div.form textarea{
+        margin: 5px 0px;
+        width: auto;
+        color: var(--cinza-placeholder);
+        
+        
+    }
+    div.form input {
+        margin: 5px 0px;
+        width: auto;
+        color: var(--cinza-placeholder);
+    }
+    div.form button{
+        width: auto;
+        
+
+    }
+    div.form h2{
+        text-align: center;
+        margin-bottom: 10px;
+
+    }
+    div.painel-desenvolvedor{
+        margin-top: 10px;
+    }
+
+
+
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
