@@ -10,11 +10,14 @@ header{
     height: 114px;
     padding-left: 156px;
     display: flex;
-    width: 100vw;
+    
     justify-content: start;
     align-items: center;
     
     
+}
+.cabecalho-lupa{
+    display: none;
 }
 
 .inputBuscar{
@@ -61,7 +64,6 @@ div.login {
     font-weight: 700;
     margin: 206px 0 25px 0;
     
-    width: 100%;
 }
 
 
@@ -70,11 +72,11 @@ div.login {
     border-radius: 4px;
     padding: 17px;
     box-sizing: border-box;
-    width: 100%;
+    width: 423px;
+    height: 63px;
     margin-top: 10px;
-    height: 50px;
     border: none;
-    color: #A2A2A2;
+    color: var(--cinza-Escuro);
     text-align:start;
     box-shadow: 0 1px 1px 0 var(--cinza-medio);
 
@@ -100,15 +102,18 @@ div button.btnEntrar:hover{
 }
 
 footer{
-    background: #EAF2FD;
+    height: auto;
+    box-sizing: border-box;
+    
+    background: var(--azul-Claro);
 
 }
 .rodape {
     
     display:flex ;
     justify-content: space-between;
+    height: auto;
     padding: 75px 152px 75px;
-    height: 250px;
 
 
 }
@@ -153,9 +158,11 @@ h2 {
     font-weight: bold;
 }
 div.form input {
+    padding-left: 12px;
     height: 56px;
     border: none;
     width:560px;
+    
 }
 div.form textarea {
     width: 560px;
@@ -164,7 +171,10 @@ div.form textarea {
     resize: none;
     text-decoration: none;
     margin-top: 8px;
+    padding-left: 12px;
+    padding-top: 16px;
 }
+
 
 div.form textarea::placeholder, div.form input::placeholder{
     font-family: var(--font-principal);
@@ -187,10 +197,13 @@ div.form button:hover{
 
 }
 div.painel-desenvolvedor {
-    padding: 20px;
     background-color: var(--cinza);
-    height: 80px;
-    text-align: center;
+    font-size: 16px;
+    height: 102px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 div.painel-desenvolvedor a img {
     width: 30px;
@@ -202,72 +215,119 @@ div.painel-desenvolvedor a img {
 
 @media screen and (max-width: 780px){
     div.cabeçalho {
+        height: 72px;
         display: flex;
-        flex-direction:column;
-        justify-content: space-around;
         align-items: center;
-
+        padding-left: 35px;
     }
-    img.logo{
-        margin: 0px;
-
+    a.logo img {
+        width: 100px;
     }
+    
 
     input.inputBuscar {
-        margin: 0px;
-        font-size: 14px;
+        width: 272px;
+        font-weight: 400;
+
         
     }
+    input.inputBuscar::placeholder{
+        font-size: 14px;
+    }
     div.login{
-        width: 50%;
+        width: 275px;
+    }
+    h1.iniciarSessao{
+        margin-top: 61px;
+        font-size: 16px;
+    }
+    .inputLogin{
+        width: 275px;
+        height: 41px;
+    }
+    div .btnEntrar {
+        text-align: center;
+        margin-top: 47px;
+        margin-bottom: 90px;
+        width: 275px;
+    }
+    div a.btnEntrar {
+        padding: 12px 34px;
+        font-size: 14px;
+    }
+    
+    div.rodape{
+        display: grid;
+        grid-template-columns: 254px auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "logo form"
+        "nav form";
+        gap: 16px;
+        padding: 32px;
+ 
+       
+
+    }
+    div.logoFooter{
+        grid-area: logo;
+        width: 176px;
+        height: 50px;
+    }
+    div.rodape-navmap{
+        grid-area: nav;
+    }
+    div.form{
+        
+        grid-area: form;
+        padding: 0px;
+        width: 434px;
+    }
+    div.form input {
+        width: auto;
+        color: var(--cinza-Escuro);
+    }
+    div.form textarea{
+        width: auto;
+        color: var(--cinza-Escuro);
+
+         
+    }
+    div.form button{
+        width: 151px;
+        height: 40px;   
+        font-size: 14px;     
+
+    }
+   
+
+    
+
+}    
+
+@media screen and (max-width: 480px){
+    div.cabeçalho {
+        padding: 0 16px;
+        justify-content: space-between;
+    }
+    .cabecalho-lupa{
+        display: block;
+    }
+    input.inputBuscar{
+        display: none;
     }
     div.rodape{
         display: flex;
         flex-direction: column;
+        padding: 16px;
         align-items: center;
-        height: 500px;
-
+        
     }
-    div.logoFooter {
-        border-bottom: solid var(--azul) 1px;
-    }
+    
     div.form{
-        
-        width: 170px ;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-
+        width: 328px;
     }
-    div.form textarea{
-        margin: 5px 0px;
-        width: auto;
-        color: var(--cinza-placeholder);
-        
-        
-    }
-    div.form input {
-        margin: 5px 0px;
-        width: auto;
-        color: var(--cinza-placeholder);
-    }
-    div.form button{
-        width: auto;
-        
-
-    }
-    div.form h2{
-        text-align: center;
-        margin-bottom: 10px;
-
-    }
-    div.painel-desenvolvedor{
-        margin-top: 10px;
-    }
-
-
-
-}    
+}
 
 
 
