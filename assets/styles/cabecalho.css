@@ -1,0 +1,66 @@
+.cabeçalho {
+    height: 114px;
+    padding-left: 156px;
+    display: flex;
+    
+    justify-content: start;
+    align-items: center;
+    
+    
+}
+.cabecalho-lupa{
+    display: none;
+}
+
+.inputBuscar{
+    margin-left: 32px;
+    width: 393px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--cinza);
+    padding-left: 20px;
+
+}
+.inputBuscar::placeholder{
+    font-family: var(--font-principal);
+    background-image: url("/assets/images/Icon-lupa.svg");
+    background-repeat: no-repeat;
+    background-position:95%;
+}
+@media screen and (max-width: 780px){
+    div.cabeçalho {
+        height: 72px;
+        display: flex;
+        align-items: center;
+        padding-left: 35px;
+    }
+    a.logo img {
+        width: 100px;
+    }
+    
+
+    input.inputBuscar {
+        width: 272px;
+        font-weight: 400;
+
+        
+    }
+    input.inputBuscar::placeholder{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px){
+    div.cabeçalho {
+        padding: 0 16px;
+        justify-content: space-between;
+    }
+    .cabecalho-lupa{
+        display: block;
+    }
+    input.inputBuscar{
+        display: none;
+    }
+    
+}
