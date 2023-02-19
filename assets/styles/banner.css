@@ -1,4 +1,40 @@
 .banner{
-    background-image: url("../images/banner.svg");
-    background-color: red;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    height: 352px;
+    background-image: url("/assets/images/banner.svg");
+    background-repeat: no-repeat;
+    padding: 34px 152px;
+
+}
+.banner__titulo{
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px; 
+}
+.banner__descricao{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--branco);
+}
+.banner__botao{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 51px;
+    background-color: var(--azul);
+    color: var(--branco);
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
 }
