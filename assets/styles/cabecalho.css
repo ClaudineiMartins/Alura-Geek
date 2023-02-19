@@ -29,7 +29,32 @@
     background-repeat: no-repeat;
     background-position:95%;
 }
+.btnLogin{
+    margin-left: auto;
+    margin-right: 152px;
+    justify-self: end;
+    width: 182px;
+    height: 51px;
+    background: transparent;
+    border: solid var(--azul) 1px;
+    box-sizing: border-box;
+
+}
+.btnLogin a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--azul);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
 @media screen and (max-width: 780px){
+    .btnLogin{
+        width: 166px;
+        height: 40px;
+        margin-right: 32px;
+    }
     div.cabeçalho {
         height: 72px;
         display: flex;
@@ -50,17 +75,31 @@
     input.inputBuscar::placeholder{
         font-size: 14px;
     }
+    
 }
 @media screen and (max-width: 480px){
     div.cabeçalho {
         padding: 0 16px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "logo botao lupa";
         justify-content: space-between;
     }
+    a .logo {
+        grid-area: logo;
+    }
     .cabecalho-lupa{
+        grid-area: lupa;
         display: block;
     }
     input.inputBuscar{
         display: none;
+    }
+    .btnLogin{
+        grid-area: botao;
+        width: 133px;
     }
     
 }
