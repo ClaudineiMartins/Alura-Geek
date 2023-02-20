@@ -1,0 +1,94 @@
+.categorias{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 64px 152px;
+}
+.categoria{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "titulo . . . . todosProdutos"
+    "produto1 produto2 produto3 produto4 produto5 produto6";
+    gap: 16px;
+}
+.categoria__titulo, .produto__titulo, .produto__preco{
+    color: var(--cinza-Escuro);
+}
+.categoria__titulo{
+    grid-area:titulo;
+    font-weight: 700;
+    font-size: 32px;
+}
+.categoria__todosProdutos{
+    text-decoration: none;
+    display: inline-block;
+    grid-area:todosProdutos;
+    color: var(--azul);
+    font-size: 16px;
+    font-weight: 700;
+    align-self: end;
+    justify-self: end;
+
+}
+.categoria__todosProdutos::after{
+    margin-left: 16px;
+    content: "";
+    display: inline-block;
+    background-image:url("../images/icon-Seta→.svg") ;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.produtos{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+.produtos img {
+    width: 176px;
+
+}
+
+.produto__titulo{
+    font-size: 14px;
+    font-weight: 500;
+}
+.produto__preco{
+    font-size: 16px;
+    font-weight: 700;    
+}
+.produto__detalhes{
+    text-decoration: none;
+    color: var(--azul);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.produto-1{
+    grid-area:produto1;
+
+}
+.produto-2{
+    grid-area:produto2;
+
+}
+.produto-3{
+    grid-area:produto3;
+
+}
+.produto-4{
+    grid-area:produto4;
+
+}
+.produto-5{
+    grid-area:produto5;
+
+}
+.produto-6{
+    grid-area:produto6;
+
+}
