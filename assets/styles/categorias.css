@@ -92,3 +92,43 @@
     grid-area:produto6;
 
 }
+@media screen and (max-width:768px){
+    .categorias{
+        padding: 32px 32px ;
+    }
+    .categoria{
+        grid-template-areas:
+        "titulo . . todosProdutos"
+        "produto1 produto2 produto3 produto4 ";
+    }
+    .produto-5, .produto-6 {
+        display: none;
+    }
+    .categoria__titulo{
+        font-size: 22px;
+    }
+    .produtos img{
+        width: 164px;
+
+    }
+}
+@media screen and (max-width: 360px){
+    .categorias{
+        padding: 16px 16px;
+    }
+    .categoria{
+        grid-template-areas:
+        "titulo  todosProdutos"
+        "produto1 produto2";
+    }
+    .categoria__todosProdutos{
+        font-size: 14px;
+    }
+    .produtos img {
+        width: 156px;
+    }
+    .produto-3, .produto-4{
+        display: none;
+    }
+
+}
