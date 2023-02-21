@@ -1,5 +1,6 @@
 div.login {
     width:423px;
+    margin: 0 auto;
 }
 
 .iniciarSessao{
@@ -7,7 +8,7 @@ div.login {
     text-align: center;
     font-size: 18px;
     font-weight: 700;
-    margin: 206px 0 25px 0;   
+    padding: 206px 0 25px 0;   
 }
 .inputLogin{
     border-radius: 4px;
@@ -23,7 +24,7 @@ div.login {
 }
 div .btnEntrar{
     margin-top: 47px;
-    margin-bottom: 90px;
+    padding-bottom: 90px;
 }
 div a.btnEntrar{
     margin-top: 20px;
@@ -55,7 +56,6 @@ div button.btnEntrar:hover{
     div .btnEntrar {
         text-align: center;
         margin-top: 47px;
-        margin-bottom: 90px;
         width: 275px;
     }
     div a.btnEntrar {
