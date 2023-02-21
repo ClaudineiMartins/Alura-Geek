@@ -39,3 +39,27 @@
     cursor: pointer;
     text-decoration: none;
 }
+@media screen and (max-width:768px ){
+   
+    .banner{
+        padding:32px 32px ;
+        background-position: center;
+    }
+}
+@media screen and (max-width:360px ){
+    .banner{
+        gap: 8px;
+        padding:16px 16px ;
+        background-size:initial;
+    }
+    .banner__titulo{
+        
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .banner__descricao{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
