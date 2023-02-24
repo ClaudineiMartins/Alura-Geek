@@ -13,11 +13,13 @@
     "produto1 produto2 produto3 produto4 produto5 produto6";
     gap: 16px;
 }
-.categoria__titulo, .produto__titulo, .produto__preco{
+.titulo_img, .produto__titulo, .produto__preco{
     color: var(--cinza-Escuro);
 }
 .categoria__titulo{
-    grid-area:titulo;
+    grid-area:titulo;}
+
+.titulo_img{
     font-weight: 700;
     font-size: 32px;
 }
@@ -104,7 +106,7 @@
     .produto-5, .produto-6 {
         display: none;
     }
-    .categoria__titulo{
+    .titulo_img{
         font-size: 22px;
     }
     .produtos img{
