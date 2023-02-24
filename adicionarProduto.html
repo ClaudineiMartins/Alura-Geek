@@ -1,1 +1,74 @@
-ADICIONAR PRODUTOS 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adicionar Produto</title>
+    <link rel="icon" href="assets/images/icon.svg">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    
+</head>
+<body>
+        <header>
+            <div class="cabeçalho">
+                <a class="logo"  href="#"><img  src="assets/images/Logo.png" alt=""></a>
+                <img class="cabecalho-lupa lupa" src="assets/images/Icon-lupa.svg" alt="lupa">
+                <input data-busca="true"  placeholder="O que deseja encontrar?" type="search" class="inputBuscar">
+                <div class="btnLogin" >
+                    <a href="login.html">Login</a>
+                </div>    
+            </div>
+    
+        </header> 
+        <main>
+            <div class="form__addProduto">
+                <h1 class="form__addProduto--titulo">Adicionar novo produto</h1>
+                <input placeholder="URL da imagem" type="file" class="form__addProduto--url form_addProduto--input">
+                <input placeholder="Categoria" type="text" class="form__addProduto--dropdown form_addProduto--input">
+                <input placeholder="Nome do produto" type="text" class="form__addProduto--nome form_addProduto--input">
+                <input placeholder="Preço do produto" type="number" class="form__addProduto--preco form_addProduto--input">
+                <textarea placeholder="Descrição do produto" type="text" class="form__addProduto-descricao form_addProduto--input"></textarea>
+                <button class="form__addProduto--btn">Adicionar produto</button>
+            </div>
+        </main>
+        <footer >
+            <div class="rodape">
+                <div class="logoFooter">
+                    <img class="logo"  src="assets/images/Logo.png" alt="">
+                </div>             
+                <div class="rodape-navmap">
+                    <nav class="rodape-navmap-list">
+                        <a class="rodape-navmap-list-Link" href="#">Quem somos nós</a>
+                        <a class="rodape-navmap-list-Link" href="#">Politica de privacidade</a>
+                        <a class="rodape-navmap-list-Link" href="#">Programa de fidelidade</a>
+                        <a class="rodape-navmap-list-Link" href="#">Nossas lojas</a>
+                        <a class="rodape-navmap-list-Link" href="#">Quero ser franqueado</a>
+                        <a class="rodape-navmap-list-Link" href="#">Anucie aqui</a>
+        
+                    </nav>
+                </div>    
+                <div class="form">
+    
+                    <h2>Fale conosco</h2>
+                    <input type="text" placeholder="Nome" required >
+                    <textarea name="" id="" cols="30" rows="10" required placeholder="Escreva sua mensagem"></textarea>
+                    <button>Enviar Mensagem</button>
+    
+                    
+                </div>
+                
+                
+            </div>  
+    
+            <div class="painel-desenvolvedor">
+                <P>Desenvolvido por <i class="autor">Claudinei Martins de Jesus</i></P>
+                <a href="https://www.linkedin.com/in/claudinei-martins-97697a208/" target="_blank"><img src="assets/images/linkedin-flat.png" alt=""></a>
+            </div>
+        </footer>
+        
+    
+    
+</body>
+</html>
