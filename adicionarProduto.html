@@ -16,8 +16,8 @@
                 <a class="logo"  href="#"><img  src="assets/images/Logo.png" alt=""></a>
                 <img class="cabecalho-lupa lupa" src="assets/images/Icon-lupa.svg" alt="lupa">
                 <input data-busca="true"  placeholder="O que deseja encontrar?" type="search" class="inputBuscar">
-                <div class="btnLogin" >
-                    <a href="login.html">Login</a>
+                <div class="btnMenuadm" >
+                    <a href="login.html">Menu Administrador</a>
                 </div>    
             </div>
     
@@ -25,8 +25,15 @@
         <main>
             <div class="form__addProduto">
                 <h1 class="form__addProduto--titulo">Adicionar novo produto</h1>
-                <input placeholder="URL da imagem" type="file" class="form__addProduto--url form_addProduto--input">
-                <input placeholder="Categoria" type="text" class="form__addProduto--dropdown form_addProduto--input">
+                <input placeholder="URL da imagem" type="url" class="form__addProduto--url form_addProduto--input">
+                <div class="form__addProduto--dropdown form_addProduto--input" >
+                    <label for="categoria">Categoria</label>
+                    <select name="Categoria" id="categoria">
+                        <option value="console">Consoles</option>
+                        <option value="diversos">Diversos</option>
+                        <option value="starWars">Star Wars</option>
+                    </select>
+                </div>
                 <input placeholder="Nome do produto" type="text" class="form__addProduto--nome form_addProduto--input">
                 <input placeholder="Preço do produto" type="number" class="form__addProduto--preco form_addProduto--input">
                 <textarea placeholder="Descrição do produto" type="text" class="form__addProduto-descricao form_addProduto--input"></textarea>
