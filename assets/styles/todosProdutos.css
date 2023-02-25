@@ -60,7 +60,7 @@
         width: 164px;
     }
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width: 480px){
     /* .admProdutos{
         grid-template-columns: repeat(2, 1fr);
 
